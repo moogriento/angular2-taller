@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExampleService } from '../example/example.service';
@@ -33,7 +32,7 @@ export class RouteItemComponent implements OnInit {
           if (id !== 'new') {
             this.getProduct();
           } else {
-            this.product = new IProduct();
+            this.product = {};
           }
         });
     }

@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Leaf Rake",
+      "name": "Leaf Rake222",
       "code": "GDN-0011",
       "releaseDate": "2012-04-23T18:25:43.511Z",
       "description": "Leaf rake with 48-inch wooden handle.",
@@ -10,17 +10,17 @@
       "imageUrl": "http://www.paraide.com/Portals/0/CVStoreImages/13160_540.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "HAEMMERLIN 5000G GREEN POLY WHEELBARROW",
       "code": "HAE-5000GG",
       "releaseDate": "2012-04-23T18:25:43.511Z",
       "description": "A great green wheelbarrow for the garden. The 'Poly' has a 90 litre polypropylene tray that is ribbed for added strength. The 32mm tubular one-piece epoxy coated frame is fitted with bi-material grips for added comfort. A 400mm disc wheel is fitted with a solid 2 ply pneumatic tyre.",
-      "price": "99999",
+      "price": 2,
       "imageUrl": "http://www.qualitygardentools.com/uploaded/thumbnails/Go%20Green_2497_1000x1200.jpg"
     },
     {
-      "id": "5",
-      "name": "test",
+      "id": 5,
+      "name": "test2",
       "code": "TBX-0048",
       "releaseDate": "2012-04-23T18:25:43.511Z",
       "description": "Curved claw steel hammer",

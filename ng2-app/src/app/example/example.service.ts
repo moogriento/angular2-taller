@@ -22,6 +22,7 @@ export class ExampleService {
   }
 
   saveProduct(product: Example.Models.IProduct) {
+    delete product.id;
     return this.http.post('http://localhost:3000/products', product)
             .map((res: Response) => res.json());
   }
