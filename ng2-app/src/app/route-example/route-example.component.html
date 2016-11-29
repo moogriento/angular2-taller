@@ -1,0 +1,29 @@
+<div class="row">
+  <button [routerLink]="['/products/new']">New</button>
+</div>
+<div class="row">
+    <table class="table table-bordered table-primary">
+        <thead class="thead-inverse">
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let product of products | async">
+                <td>{{product.id}}</td>
+                <td>
+                    <a href="" [routerLink]="['/products', product.id]">
+                     {{product.name}}
+                     </a>
+                </td>
+                <td> {{product.price}}</td>
+                <td>
+                  <button (click)="deleteProduct(product)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
