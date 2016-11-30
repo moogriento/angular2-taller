@@ -18,7 +18,7 @@ export class ExampleService {
   }
   getProduct(id: number) {
     return this.getListProducts().
-    map(products => products.find(product => product.id === id));
+    map(products => products.find(product => product.id == id));
   }
 
   saveProduct(product: Example.Models.IProduct) {

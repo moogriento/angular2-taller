@@ -51,13 +51,32 @@ export class RouteItemComponent implements OnInit {
 
   private setEditCharacter(product: IProduct) {
     if (product) {
+      // no time for momentjs xd
+      if (product.releaseDate) {
+        let date = new Date(product.releaseDate);
+        console.log('date', date);
+        product.releaseDateFormat = {
+          year: date.getFullYear(),
+          month: date.getMonth() + 1,
+          day: date.getDate()
+        };
+      }
       this.product = product;
     } else {
       this.gotoProducts();
     }
   }
 
+  // refactor
   private saveProduct() {
+
+    let releaseDate = this.product.releaseDateFormat;
+
+    if (releaseDate) {
+      this.product.releaseDate = releaseDate.year + '-' + releaseDate.month + '-' + releaseDate.day;
+      delete this.product.releaseDateFormat;
+    }
+
     if (!this.product.id) {
       this.exampleService.saveProduct(this.product).subscribe(result => {
           this.router.navigate(['/products'], { });

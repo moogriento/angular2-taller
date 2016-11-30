@@ -7,5 +7,6 @@ declare module Example.Models {
         price: number;
         description: string;
         imageUrl: string;
+        releaseDateFormat: any;
     }
 }
