@@ -1,1 +1,1 @@
-# Tarea del talle de Angular 2
+# Tarea del taller de Angular 2
