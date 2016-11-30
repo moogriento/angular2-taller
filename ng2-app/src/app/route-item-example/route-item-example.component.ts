@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExampleService } from '../example/example.service';
+import { NgbdDatepickerPopup } from './datepicker-popup';
 
 import IProduct = Example.Models.IProduct;
 

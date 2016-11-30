@@ -1,7 +1,4 @@
 <div class="row">
-  <button [routerLink]="['/products/new']">New</button>
-</div>
-<div class="row">
     <table class="table table-bordered table-primary">
         <thead class="thead-inverse">
             <tr>
@@ -21,9 +18,13 @@
                 </td>
                 <td> {{product.price}}</td>
                 <td>
-                  <button (click)="deleteProduct(product)">Delete</button>
+                  <button class="btn btn-primary" (click)="deleteProduct(product)">Delete</button>
                 </td>
             </tr>
         </tbody>
     </table>
+</div>
+
+<div class="row">
+  <button class="btn btn-danger mycolor" [routerLink]="['/products/new']">New</button>
 </div>

@@ -1,7 +1,7 @@
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -26,6 +26,11 @@ import { CanActivateAuthGuard } from './shared/can-activate.service';
 import { LoginComponent } from './login/login.component';
 import { UserProfileService } from './login/user-profile.service';
 
+
+
+
+import { NgbdDatepickerPopup } from './route-item-example/datepicker-popup';
+
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 /**
  * Ng2 Module for class
@@ -36,6 +41,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     BrowserModule,
     HttpModule,
     FormsModule,
+    ReactiveFormsModule,
     routing,
     NgbModule.forRoot()
   ],
@@ -54,7 +60,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     RouteExampleComponent,
     RouteItemComponent,
     RouteComponent,
-    LoginComponent
+    LoginComponent,
+    NgbdDatepickerPopup
   ],
   entryComponents: [NgbdModalContent],
   providers: [
